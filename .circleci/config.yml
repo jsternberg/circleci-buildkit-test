@@ -10,7 +10,7 @@ jobs:
       - checkout
       - setup_remote_docker:
           version: 18.09.3
-      - run: docker build -t influxdb .
+      - run: docker build --progress=plain -t influxdb .
 
 workflows:
   version: 2
