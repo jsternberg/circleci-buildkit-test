@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          version: 18.09.6
+          version: 18.09.3
       - run: docker build -t influxdb .
 
 workflows:
