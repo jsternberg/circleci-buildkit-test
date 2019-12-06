@@ -8,7 +8,8 @@ jobs:
       DOCKER_BUILDKIT: '1'
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 18.09.6
       - run: docker build -t influxdb .
 
 workflows:
